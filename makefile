@@ -14,6 +14,10 @@ TARGET_BOARD         ?= BOARD_PCA10031
 # *** Make sure NRF51_SDK_BASE is defined as an environment variable, or define it here
 #NRF51_SDK_BASE	  := $(HOME)/path/to/sdk
 
+# *** Make sure EHAL_PATH is defined as an environment variable, or define it here
+# Download EHAL from https://github.com/I-SYST/EHAL
+#EHAL_PATH	  := $(HOME)/path/to/ehal
+
 COMPONENTS    := $(NRF51_SDK_BASE)/components
 TEMPLATE_PATH := $(COMPONENTS)/toolchain/gcc
 LINKER_SCRIPT := ./linker/gcc_nrf51_s130_32kb.ld
