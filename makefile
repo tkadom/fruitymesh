@@ -16,7 +16,6 @@ TARGET_BOARD         ?= BOARD_PCA10031
 
 COMPONENTS    := $(NRF51_SDK_BASE)/components
 TEMPLATE_PATH := $(COMPONENTS)/toolchain/gcc
-EHAL_PATH     := $(HOME)/nrf/sdk/ehal_latest
 LINKER_SCRIPT := ./linker/gcc_nrf51_s130_32kb.ld
 OUTPUT_NAME   := FruityMesh
 
