@@ -11,10 +11,11 @@ TARGET_BOARD         ?= BOARD_PCA10031
 # Define relative paths to SDK components
 #------------------------------------------------------------------------------
 
-SDK_BASE      := $(HOME)/nrf/sdk/nrf_sdk_9_0
-COMPONENTS    := $(SDK_BASE)/components
+# *** Make sure NRF51_SDK_BASE is defined as an environment variable, or define it here
+#NRF51_SDK_BASE	  := $(HOME)/path/to/sdk
+
+COMPONENTS    := $(NRF51_SDK_BASE)/components
 TEMPLATE_PATH := $(COMPONENTS)/toolchain/gcc
-EHAL_PATH     := $(HOME)/nrf/sdk/ehal_latest
 LINKER_SCRIPT := ./linker/gcc_nrf51_s130_32kb.ld
 OUTPUT_NAME   := FruityMesh
 
