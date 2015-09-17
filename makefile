@@ -11,10 +11,10 @@ TARGET_BOARD         ?= BOARD_PCA10031
 # Define relative paths to SDK components
 #------------------------------------------------------------------------------
 
-# *** Make sure SDK_BASE is defined as an environment variable, or define it here
-#SDK_BASE	  := $(HOME)/path/to/sdk
+# *** Make sure NRF51_SDK_BASE is defined as an environment variable, or define it here
+#NRF51_SDK_BASE	  := $(HOME)/path/to/sdk
 
-COMPONENTS    := $(SDK_BASE)/components
+COMPONENTS    := $(NRF51_SDK_BASE)/components
 TEMPLATE_PATH := $(COMPONENTS)/toolchain/gcc
 EHAL_PATH     := $(HOME)/nrf/sdk/ehal_latest
 LINKER_SCRIPT := ./linker/gcc_nrf51_s130_32kb.ld
