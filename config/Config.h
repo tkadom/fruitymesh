@@ -198,7 +198,7 @@ class Conf
 //If undefined, the final build will have no logging / Terminal functionality built in
 #define ENABLE_LOGGING
 #define ENABLE_TERMINAL
-#define ENABLE_UART
+#define ENABLE_UART 
 
 
 /*############ SERVICES ################*/
@@ -223,7 +223,8 @@ enum moduleID{
 	ENROLLMENT_MODULE_ID=50,
 
 	//Custom modules
-	TEST_MODULE_ID=30000
+	TEST_MODULE_ID=30000,
+	PING_MODULE_ID=10010
 };
 
 /*############ Regarding node ids ################*/

@@ -19,7 +19,7 @@
 
 //I changes sth. to disable UART if no receiving device has been
 //detected for a few seconds.
-bool disableUART = false;
+bool disableUART = true;
 
 uint8_t simple_uart_get(void)
 {

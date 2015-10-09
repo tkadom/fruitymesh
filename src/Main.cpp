@@ -45,6 +45,7 @@ extern "C"{
 #include <softdevice_handler.h>
 #include <app_timer.h>
 #include <malloc.h>
+#include "neopixel.h"
 }
 
 //A global buffer for the current event, which must be 4-byte aligned
@@ -73,8 +74,6 @@ Node* node = NULL;
 bool lookingForInvalidStateErrors = false;
 
 Conf* Conf::instance;
-
-
 
 int main(void)
 {
@@ -155,7 +154,7 @@ int main(void)
 				break;
 			}
 		} while (true);
-	}
+	} 
 }
 
 //INIT function that starts up the Softdevice and registers the needed handlers

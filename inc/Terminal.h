@@ -38,7 +38,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using namespace std;
 
 
-#define MAX_TERMINAL_COMMAND_LISTENER_CALLBACKS 20
+#define MAX_TERMINAL_COMMAND_LISTENER_CALLBACKS 25
 
 
 
