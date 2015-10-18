@@ -11,10 +11,19 @@ TARGET_BOARD         ?= BOARD_PCA10031
 # Define relative paths to SDK components
 #------------------------------------------------------------------------------
 
-SDK_BASE      := $(HOME)/nrf/sdk/nrf_sdk_9_0
-COMPONENTS    := $(SDK_BASE)/components
+# Please define an env var called NRF51_NRF51_SDK_BASE to point to the top dir of where you installed the NRF51 SDK
+# or define it here:
+# 
+# NRF51_SDK_BASE      := /path/to/sdk
+
+# Please define an env var called EHAL_PATH to point to the top dir of where you installed EHAL
+# or define it here:
+# 
+# EHAL_PATH      := /path/to/ehal
+# Download EHAL here: https://github.com/I-SYST/EHAL
+
+COMPONENTS    := $(NRF51_SDK_BASE)/components
 TEMPLATE_PATH := $(COMPONENTS)/toolchain/gcc
-EHAL_PATH     := $(HOME)/nrf/sdk/ehal_latest
 LINKER_SCRIPT := ./linker/gcc_nrf51_s130_32kb.ld
 OUTPUT_NAME   := FruityMesh
 
